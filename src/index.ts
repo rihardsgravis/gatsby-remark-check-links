@@ -120,14 +120,15 @@ export = async function plugin(
         if (micromatch.isMatch(key, prefixedExceptions)) {
           return false;
         }
-
+        
         const headings = headingsMap[key];
         if (headings) {
+          /*
           if (hasHash) {
             const id = link.url.slice(hashIndex + 1);
             return !prefixedExceptions.includes(id) && !headings.includes(id);
           }
-
+          */
           return false;
         }
 
