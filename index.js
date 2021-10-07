@@ -155,10 +155,12 @@ module.exports = function plugin(_a, _b) {
                                 }
                                 var headings = headingsMap[key];
                                 if (headings) {
+                                    /*
                                     if (hasHash) {
-                                        var id = link.url.slice(hashIndex + 1);
-                                        return !prefixedExceptions.includes(id) && !headings.includes(id);
+                                      const id = link.url.slice(hashIndex + 1);
+                                      return !prefixedExceptions.includes(id) && !headings.includes(id);
                                     }
+                                    */
                                     return false;
                                 }
                                 return true;
