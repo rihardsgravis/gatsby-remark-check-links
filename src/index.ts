@@ -123,10 +123,12 @@ export = async function plugin(
 
         const headings = headingsMap[key];
         if (headings) {
+          /*
           if (hasHash) {
             const id = link.url.slice(hashIndex + 1);
             return !prefixedExceptions.includes(id) && !headings.includes(id);
           }
+          */
 
           return false;
         }
